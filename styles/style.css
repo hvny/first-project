@@ -21,9 +21,12 @@
     position: relative;
 }
 
-.logo_place_header {
+.logo {
     width: 228px;
     height: 32px;
+}
+
+.logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
@@ -103,15 +106,17 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-width: 784px;
-    gap: 30px;
     /*расстояние между абзацами*/
+    gap: 30px;
 }
 
 .two-columns__paragraph {
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
+    margin: 0;
 }
 
 .two-columns__span-accent {
@@ -177,6 +182,7 @@
 }
 
 .table__text {
+    margin: 0;
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -217,6 +223,8 @@
 .feynman__link {
     position: absolute;
     right: 48px;
+    top: 50%;
+    bottom: 50%;
     text-decoration: none;
     line-height: 51px;
     font-size: 36px;
@@ -271,9 +279,60 @@
 /*footer*/
 
 .footer {
+    min-height: 350px;
     padding: 60px 0 40px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
     background-color: #1f1f1f;
+}
+
+.footer__columns {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer__column_content_copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-basis: 711px;
+}
+
+.footer__author {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer__column-heading {
+    margin: 0;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer__column-links {
+    margin: 20px 0 16px 0;
+}
+
+.footer__column-link {
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.footer__social-icon {
+    margin: 0 10px 0 0;
 }
